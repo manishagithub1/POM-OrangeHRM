@@ -54,6 +54,7 @@ public class BaseClass {
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 	}
 
+	@AfterSuite
 	public void closeBrowser() {
 		driver.quit();
 	}
